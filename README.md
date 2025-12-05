@@ -602,11 +602,64 @@ The Code Execution Paradigm achieves 94.91% token savings
 | Express intent at highest practical level | Reduce reasoning overhead |
 | Let infrastructure handle tool mechanics | Focus LLM on domain reasoning |
 
-### Future Work
+### Future Research Directions
 
-- **Phase 2**: Validate with actual Claude API calls
-- **Phase 3**: Test with larger tool ecosystems (20+ tools)
-- **Phase 4**: Measure latency and cost in production
+To transform this simulation into publication-ready academic research:
+
+#### Phase 2: Real API Validation
+
+| Step | Description |
+|------|-------------|
+| Live Claude API Calls | Replace simulation with actual Claude API to measure real token consumption |
+| Multiple LLM Comparison | Test with GPT-4, Gemini, Llama to validate pattern across models |
+| Cost Analysis | Map token savings to actual $ cost savings |
+| Latency Measurement | Time per operation, end-to-end latency |
+
+#### Phase 3: Scale Testing
+
+| Step | Description |
+|------|-------------|
+| Larger Tool Ecosystems | Test with 20, 50, 100+ tools to validate O(N×M) vs O(N+M) at scale |
+| Varied Operation Counts | Test 1, 5, 10, 50, 100 operations per session |
+| Tool Complexity Variance | Simple tools (2 params) vs complex tools (20+ params) |
+
+#### Phase 4: Statistical Rigor
+
+| Step | Description |
+|------|-------------|
+| Multiple Runs | Run each scenario 30+ times for statistical significance |
+| Confidence Intervals | Report mean ± std deviation, p-values |
+| Control Variables | Same prompts, same tools, isolated environment |
+| Reproducibility Package | Docker container, seed values, exact versions |
+
+#### Phase 5: Comparative Study
+
+| Step | Description |
+|------|-------------|
+| Baseline Comparisons | Compare with LangChain, AutoGPT, other tool-calling frameworks |
+| Quality Metrics | Do both paradigms produce equivalent task completion quality? |
+| Error Case Analysis | How do paradigms handle failures and edge cases? |
+
+#### Phase 6: Publication Preparation
+
+| Step | Description |
+|------|-------------|
+| Literature Review | Formal survey of existing MCP/tool-calling research |
+| Threats to Validity | Document limitations (simulation vs reality, tokenizer differences) |
+| Peer Review | Submit to ACL, EMNLP, or arXiv cs.CL |
+
+#### Current Limitations
+
+```
+Current State              →    Academic Research
+──────────────────────────────────────────────────
+Simulation                 →    Real API measurements
+1 run                      →    30+ runs with statistics
+5 tools × 5 ops            →    Varying scales (5-100)
+Single tokenizer           →    Multiple tokenizers
+No error cases             →    Error handling analysis
+No quality metrics         →    Task completion accuracy
+```
 
 ---
 
