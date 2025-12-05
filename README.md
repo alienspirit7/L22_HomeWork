@@ -178,14 +178,14 @@ Every MCP tool requires a complete definition in the LLM's context:
 
 **A single tool definition can consume 200-500 tokens.** With 5+ tools, this exceeds 2,000 tokens before any actual work begins.
 
-### Complexity Analysis
+### Hypothesis Statement to Confirm/Disprove
 
 | Architecture | Token Pattern | Description |
 |--------------|---------------|-------------|
 | **Traditional MCP** | O(N × M) | N tools × M operations = multiplicative growth |
 | **Code Execution** | O(N + M) | One-time discovery + lean operations = additive growth |
 
-**Mathematical Implication:** For 5 tools and 5 operations:
+**Expected Results:** For 5 tools and 5 operations:
 - Traditional: 5 × 5 = 25 "units" of overhead
 - Code Execution: 5 + 5 = 10 "units" of overhead
 - Theoretical savings: 60%
