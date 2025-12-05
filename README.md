@@ -120,23 +120,16 @@ The Code Execution paradigm fundamentally transforms the LLM's role:
 
 ```
 L22_HomeWork/
-├── .claude/
-│   └── skills/
-│       └── mcp-servers-specialist.md    # MCP knowledge skill
-│
-├── experiment/
-│   ├── __init__.py                      # Package init
-│   ├── token_counter.py                 # Token counting utilities (tiktoken)
-│   ├── mock_mcp_server.py               # Simulated MCP server with 5 tools
-│   ├── traditional_mcp.py               # Traditional architecture simulation
-│   ├── code_execution.py                # Code execution paradigm simulation
-│   ├── analysis.py                      # Comparison and visualization
-│   ├── run_experiment.py                # Main experiment runner
-│   ├── results.json                     # Experiment results (generated)
-│   ├── token_comparison_chart.png       # Visualization (generated)
-│   └── README.md                        # This file
-│
-└── README.md                            # Project documentation
+├── .gitignore                   # Git ignore rules
+├── run_experiment.py            # Main experiment runner
+├── traditional_mcp.py           # Traditional architecture simulation
+├── code_execution.py            # Code execution paradigm simulation
+├── mock_mcp_server.py           # Simulated MCP server with 5 tools
+├── token_counter.py             # Token counting utilities (tiktoken)
+├── analysis.py                  # Comparison and visualization
+├── README.md                    # This documentation
+├── results.json                 # Experiment results (generated)
+└── token_comparison_chart.png   # Visualization (generated)
 ```
 
 ### Module Descriptions
@@ -554,17 +547,17 @@ pip install tiktoken matplotlib tabulate
 
 ```bash
 cd /path/to/L22_HomeWork
-python3 experiment/run_experiment.py
+python3 run_experiment.py
 ```
 
 ### Options
 
 ```bash
 # Skip chart generation
-python3 experiment/run_experiment.py --no-charts
+python3 run_experiment.py --no-charts
 
 # Skip JSON output
-python3 experiment/run_experiment.py --no-save
+python3 run_experiment.py --no-save
 ```
 
 ### Expected Output
