@@ -1,0 +1,40 @@
+{
+  "traditional": {
+    "paradigm": "Traditional MCP",
+    "operation_count": 5,
+    "initial_context_tokens": 1909,
+    "total_context_tokens": 4199,
+    "total_reasoning_tokens": 354,
+    "total_tool_call_tokens": 417,
+    "total_response_tokens": 658,
+    "grand_total": 5628,
+    "tokens_per_operation": 1125.6
+  },
+  "code_execution": {
+    "paradigm": "Code Execution",
+    "operation_count": 2,
+    "initial_context_tokens": 103,
+    "total_context_tokens": 103,
+    "total_reasoning_tokens": 16,
+    "total_tool_call_tokens": 208,
+    "total_response_tokens": 187,
+    "grand_total": 514,
+    "tokens_per_operation": 257.0
+  },
+  "comparison": {
+    "total_token_savings": 5114,
+    "total_savings_percentage": 90.87,
+    "context_token_savings": 4096,
+    "context_savings_percentage": 97.55,
+    "tokens_per_op_traditional": 1125.6,
+    "tokens_per_op_code_execution": 257.0,
+    "efficiency_multiplier": 10.95
+  },
+  "theory_validation": {
+    "pattern_traditional": "O(N\u00d7M)",
+    "pattern_code_execution": "O(N+M)",
+    "expected_savings": "60-70%",
+    "actual_savings": "90.9%",
+    "hypothesis_supported": true
+  }
+}
