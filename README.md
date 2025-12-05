@@ -653,3 +653,13 @@ MIT License - See LICENSE file for details.
 ## Acknowledgments
 
 This experiment was designed and programmed with **Claude Opus 4** (claude-sonnet-4-20250514), Anthropic's AI assistant, utilizing the MCP Servers Specialist skill for comprehensive knowledge of the Model Context Protocol architecture and the paradigm shift from sequential orchestration to high-level code composition.
+
+### MCP Servers Specialist Skill
+
+| Metric | Value |
+|--------|-------|
+| **Tokens** | 5,197 |
+| Lines | 718 |
+| Characters | 23,898 |
+
+*The skill represents comprehensive MCP knowledge - roughly equivalent to the entire Traditional MCP simulation (5,628 tokens) or about 10x the Code Execution simulation (514 tokens).*
