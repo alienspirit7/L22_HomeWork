@@ -540,6 +540,11 @@ The code execution environment includes:
 ### Prerequisites
 
 ```bash
+pip install -r requirements.txt
+```
+
+Or install individually:
+```bash
 pip install tiktoken matplotlib tabulate
 ```
 
